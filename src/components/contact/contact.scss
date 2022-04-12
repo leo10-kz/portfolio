@@ -1,0 +1,66 @@
+@import "../../global.scss";
+
+.contact {
+  background-color: white;
+  display: flex;
+  
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+    }
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 40px;
+    }
+    form {
+      width: 80%;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      
+      input {
+        width: 400px;
+        height: 30px;
+        font-size: 14px;
+        border: 3px solid #2a83bb;
+      }
+      textarea {
+        width: 400px;
+        height: 300px;
+        font-size: 14px;
+        border: 3px solid #2a83bb;
+      }
+      button {
+        width: 160px;
+        height: 40px;
+        color: white;
+        background-color: #2a83bb;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      span {
+        color: green;
+      }
+    }
+  }
+}
