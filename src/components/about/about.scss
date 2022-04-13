@@ -4,10 +4,16 @@
     background-color: white;
     display:flex;
     height: 50vh;
+    @include mobile{
+        display: block;
+    }
     .left{
         flex: 0.7;  
         overflow: hidden;
         margin-top: 40px;
+        @include mobile{
+            flex:auto;
+        }
         .container{
             width: 90%;
             height: 90%;
@@ -41,12 +47,16 @@
             justify-content: space-between;
             overflow: hidden;
             
+            
             img{
                width: 80%;
                margin-right: 40px;
                object-fit: cover;
                border-radius: 10px;
                border: 3px solid #2a83bb;
+               @include mobile{
+                flex-wrap: wrap;
+            }
                &:hover {
                 transform: translateY(-20px);
                 transition:0.5s ;
@@ -63,6 +73,9 @@
         display: flex;
         align-items: center;
         justify-content: center; 
+        @include mobile{
+            flex: auto;
+        }
 
         .item{
             width: 420px;

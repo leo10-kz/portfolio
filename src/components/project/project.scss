@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .project{
     background-color: #2a83bb;
     display: flex;
@@ -9,13 +11,24 @@
         height: 70px;
         position: absolute;
         cursor: pointer;
+
+        @include mobile{
+            height: 60px;
+        }
+
         &.left{
             left: 100px;
             transform:rotateY(180deg) ;
+            @include mobile{
+                left: -16px;
+            }
         }
 
         &.right{
             right: 100px;
+            @include mobile{
+                right: -16px;
+            }
         }
     }
 
@@ -25,6 +38,11 @@
         position: absolute;
         left:0;
         transition: all 1s ease-out;
+
+        @include mobile{
+            height: 100vh;
+            justify-content: center;
+        }
     }
 
     .container{
@@ -42,7 +60,10 @@
           display: flex;
           align-items: center;
           justify-content: center;
-
+          @include mobile{
+              width: 80%;
+              height: 30rem;
+          }
 
           .left{
             flex: 4;
@@ -50,7 +71,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            
+            @include mobile{
+                flex: 8;
+                font-size: 20px;
+            }
 
             .leftContainer{
                width: 80%;
@@ -76,10 +100,16 @@
 
                h2{
                    font-size: 28px;
+                   @include mobile{
+                       font-size: 20px;
+                   }
                }
 
                p{
                  font-size: 18px;  
+                 @include mobile{
+                    font-size: 16px;
+                }
                }
 
                span{
