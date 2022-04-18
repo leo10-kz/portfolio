@@ -1,6 +1,6 @@
 import './about.scss';
 import pdf from '../../assets/Leonel Quiroga.pdf';
-import cv from '../../assets/cv-img.png'
+import cv from '../../assets/Leonel Quiroga-cv-img.png'
 
 export default function About() {
   return (
